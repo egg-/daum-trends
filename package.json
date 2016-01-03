@@ -1,11 +1,11 @@
 {
   "name": "daum-trends",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "egg",
     "email": "i@egg.pe.kr"
   },
-  "description": "Scrap recent trend words(실시간 이슈) on Daum for Node.js",
+  "description": "Scrap recent trend words(실시간 이슈, 실시간 동영상) on Daum for Node.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -15,7 +15,9 @@
     "daum",
     "trends",
     "keyword",
-    "search"
+    "search",
+    "video",
+    "issue"
   ],
   "license": "MIT",
   "main": "./index",

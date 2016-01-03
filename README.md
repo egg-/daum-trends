@@ -1,6 +1,6 @@
 # daum-trends
 
-Scrap recent trend words(실시간 이슈) on Daum for Node.js
+Scrap recent trend words(실시간 이슈, 실시간 동영상) on Daum for Node.js
 
 The unofficial module to crawl the content of the site.
 Therefore, whenever it may not be a normal operation, if problems occur, please add the issue.
@@ -19,7 +19,7 @@ Therefore, whenever it may not be a normal operation, if problems occur, please 
 ```javascript
 var trends = require('daum-trends')
 
-trends.load(['real'], function (err, result) {
+trends.load(['real', 'video'], function (err, result) {
   console.log(err, JSON.stringify(result))
 })
 
@@ -31,15 +31,28 @@ trends.load(['real'], function (err, result) {
   "real": [
     {
       "title": "강성",
-      "link": "https://m.search.daum.net/search?w=tot&amp;q=%EA%B0%95%EC%84%B1&amp;DA=ATG&amp;nil_mtopsearch=issuekwd&amp;logical=issue&amp;pin=issue",
+      "link": "https://m.search.daum.net/search?w=tot&q=%EA%B0%95%EC%84%B1&DA=ATG&nil_mtopsearch=issuekwd&logical=issue&pin=issue",
       "type": "+",
       "num": 244,
+      "ctime": 0
+    },
+    // ...
+  ],
+  "video": [
+    {
+      "title": "내딸 금사월",
+      "link": "http://search.daum.net/search?w=vclip&video&q=%EB%82%B4%EB%94%B8%20%EA%B8%88%EC%82%AC%EC%9B%94",
+      "type": "+",
+      "num": 96,
       "ctime": 0
     },
     // ...
   ]
 }
 ```
+
+## crawler types
+* `real`, `video`
 
 ### type list
 * `+`, `-`, `0`, `new`

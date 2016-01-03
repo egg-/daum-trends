@@ -1,5 +1,5 @@
 var trends = require('./')
 
-trends.load(['real'], function (err, result) {
+trends.load(['real', 'video'], function (err, result) {
   console.log(err, JSON.stringify(result))
 })
