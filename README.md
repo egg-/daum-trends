@@ -19,7 +19,7 @@ Therefore, whenever it may not be a normal operation, if problems occur, please 
 ```javascript
 var trends = require('daum-trends')
 
-trends.load(['real', 'video'], function (err, result) {
+trends.load(['real', 'video', 'kakaotv'], function (err, result) {
   console.log(err, JSON.stringify(result))
 })
 
@@ -46,13 +46,23 @@ trends.load(['real', 'video'], function (err, result) {
       "num": 96,
       "ctime": 0
     },
+  ],
+    // ...
+  "kakaotv": [
+    {
+      "title": "황희찬 드리블",
+      "link": "https://tv.kakao.com/search?q=%ED%99%A9%ED%9D%AC%EC%B0%AC+%EB%93%9C%EB%A6%AC%EB%B8%94",
+      "type": "+",
+      "num": 78,
+      "ctime": 0
+    },
     // ...
   ]
 }
 ```
 
 ## crawler types
-* `real`, `video`
+* `real`, `video`, `kakaotv`
 
 ### type list
 * `+`, `-`, `0`, `new`

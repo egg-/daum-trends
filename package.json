@@ -1,6 +1,6 @@
 {
   "name": "daum-trends",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "egg",
     "email": "i@egg.pe.kr"
@@ -17,7 +17,8 @@
     "keyword",
     "search",
     "video",
-    "issue"
+    "issue",
+    "kakaotv"
   ],
   "license": "MIT",
   "main": "./index",
